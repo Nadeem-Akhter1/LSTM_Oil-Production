@@ -1,13 +1,13 @@
 # LSTM_Oil-Production
-#Problem Statement: Predictive Modeling for Cumulative Oil Production in Wells
+# Problem Statement: Predictive Modeling for Cumulative Oil Production in Wells
 
 The oil and gas industry faces challenges in optimizing production from reservoirs, and accurate forecasting of cumulative oil production in individual wells is crucial for efficient resource management. This problem statement addresses the need for developing a predictive model to forecast the cumulative oil production of wells using historical production data. The goal is to provide valuable insights into future production trends, aiding in strategic decision-making and resource planning.
 
-#Background:
+# Background:
 
 In the provided code, historical daily oil production data from different wells is utilized to train a Long Short-Term Memory (LSTM) neural network model. The model takes into account a lookback window of 14 days to capture temporal dependencies and predict future cumulative oil production. The dataset is preprocessed, normalized, and split into training and testing sets for model training and evaluation. The LSTM model is then trained using the training data, and its performance is assessed on the testing data.
 
-#Challenges:
+# Challenges:
 
 Temporal Dependencies: The oil production in wells often exhibits temporal dependencies, where current production values depend on past values. Capturing these dependencies is crucial for accurate predictions, and the LSTM architecture is chosen for its ability to model such sequential patterns.
 
@@ -17,7 +17,7 @@ Model Complexity: The chosen LSTM model consists of multiple layers, each with a
 
 Overfitting and Generalization: To prevent overfitting, the model is trained with early stopping and model checkpoint callbacks. Early stopping halts training when the validation loss stops improving, and model checkpoint saves the best-performing model.
 
-#Approach to the Solution:
+# Approach to the Solution:
 
 Data Exploration and Preprocessing:
 
